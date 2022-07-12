@@ -14,7 +14,11 @@ router.get('/api', (req, res) => {
     })
 })
 
+
+// Routes for crud users
 router.post('/api/users', catchErrors(addUser));
 router.get('/api/users', catchErrors(getUsers));
+
+
 
 export default router;
