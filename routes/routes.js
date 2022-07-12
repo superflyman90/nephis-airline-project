@@ -1,4 +1,6 @@
 import { Router } from "express";
+import {catchErrors} from "../helpers.js";
+import { addUser } from "../controllers/UsersController.js";
 
 const router = Router();
 
@@ -11,5 +13,7 @@ router.get('/api', (req, res) => {
         message: 'Hello World!'
     })
 })
+
+router.post('/api/users', catchErrors(addUser));
 
 export default router;
