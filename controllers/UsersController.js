@@ -10,3 +10,8 @@ export const addUser = async (req, res) => {
         res.status(500).send(err);
     }
 }
+
+export const getUsers = async (req, res) => {    
+        const users = await UserModel.find({});
+        res.send(users);    
+}
