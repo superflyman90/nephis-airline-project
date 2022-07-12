@@ -19,6 +19,15 @@ router.get('/api', (req, res) => {
 router.post('/api/users', catchErrors(addUser));
 router.get('/api/users', catchErrors(getUsers));
 
+// Routes for crud simulators
 
+
+// Routes for crud Logs
+
+
+// Routes for crud rôles
+
+
+//Routes for crud countries
 
 export default router;
