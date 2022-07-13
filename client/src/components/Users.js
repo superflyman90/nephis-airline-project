@@ -8,7 +8,6 @@ const Users = () => {
         const fetchData = async () => {
             const data = await window.fetch('/api/users')
             const json = await data.json();
-            console.log(json);
             setUsers(json);
         }
 
