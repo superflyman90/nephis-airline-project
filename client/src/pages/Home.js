@@ -3,10 +3,10 @@ import Users from '../components/Users';
 
 const Home = () => {
     return (
-        <>
-            <h1>Home</h1>
+        <div className='container'>
+            <h2>Home</h2>
             <Users />
-        </>
+        </div>
     );
 };
 
