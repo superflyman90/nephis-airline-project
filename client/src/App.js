@@ -1,12 +1,18 @@
 import './styles/index.scss';
-import Users from './components/Users';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Pilotes from './pages/Pilotes';
+import Navbar from './components/Navbar';
 
 const App = () => {
 
   return (
     <div className="App">
-      <h1>Nephis Airline</h1>      
-      <Users />      
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pilotes" element={<Pilotes />} />
+      </Routes>
     </div>
   )
 }
