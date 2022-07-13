@@ -16,6 +16,7 @@ const Users = () => {
 
     return ( 
         <>
+        <h1>Les DevOps sont :</h1>
         {users.map(user => (
             <h2 key={user._id}>{user.pseudo}</h2>
         ))}
