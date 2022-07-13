@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pilotes = () => {
     return (
-        <div>
+        <div className='container'>
             <h2>Nos pilotes</h2>
         </div>
     );
