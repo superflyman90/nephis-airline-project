@@ -8,7 +8,6 @@ const Users = () => {
         const fetchData = async () => {
             const data = await window.fetch('/api/users')
             const json = await data.json();
-            console.log(json);
             setUsers(json);
         }
 
@@ -17,6 +16,7 @@ const Users = () => {
 
     return ( 
         <>
+        <h1>Les DevOps sont :</h1>
         {users.map(user => (
             <h2 key={user._id}>{user.pseudo}</h2>
         ))}
