@@ -36,31 +36,31 @@ const UserSchema = new mongoose.Schema(
             type: Schema.Types.ObjectId,
             ref: "Country"
         },
-        Birthday: {
+        birthday: {
             type: Date,
             required : true,
         },
-        Simulator : {
+        simulator : {
             type: Schema.Types.ObjectId,
             ref: "Simulator"
         },
-        Password: {
+        password: {
             type: String,
             required: true
         },
-        Logs:{
+        logs:{
             type: Schema.Types.ObjectId,
             ref: "Logs"
         },
-        VastimID: {
+        vastimID: {
             type: String,
             required: false
         },
-        IvaoID: {
+        ivaoID: {
             type: String,
             required: false
         },
-        Roles: {
+        roles: {
             type: Schema.Types.ObjectId,
             ref: "Roles"
         },
