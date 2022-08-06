@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    .connect a {
+        color: black;
+        font-size: 1.5rem;
+        span {
+            margin: 0 10px;
+        }
+    }
+}

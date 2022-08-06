@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+@use './navbar.scss';
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid $color-2;
+    img {
+        width: 137px;
+        height: 137px;
+        margin-top: 25px;
+        margin-left: 70px;        
+   }
+}

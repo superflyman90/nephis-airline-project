@@ -1,21 +1,33 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../assets/images/Logo.png';
+import Connexion from './Connexion';
+
 
 const Navbar = () => {
     return (
-        <div className="navbar">
-            <h1 className='title'><NavLink to="/">Nephis Airline</NavLink></h1>
-            <nav className="navbar_menu">
-                <ul className="navbar_menu_list">
-                    <li className="navbar_menu_item">
-                        <NavLink to='/'>Home</NavLink>
-                    </li>
-                    <li className="navbar_menu_item">
-                        <NavLink to='/pilotes'>Pilotes</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav className="navbar">
+            <img src={Logo} alt="logo nephis" />
+            <li>
+                <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+                <NavLink to="#">Link</NavLink>
+            </li>
+            <li>
+                <NavLink to="#">Link</NavLink>
+            </li>
+            <li>
+                <NavLink to="#">Link</NavLink>
+            </li>
+            <li>
+                <NavLink to="#">Link</NavLink>
+            </li>
+            <Connexion />
+
+        </nav>
+            
+       
     );
 };
 

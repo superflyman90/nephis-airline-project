@@ -1,20 +1,17 @@
-import './styles/index.scss';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Home from './pages/Home';
 import Pilotes from './pages/Pilotes';
-import Navbar from './components/Navbar';
 
 const App = () => {
-
-  return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pilotes" element={<Pilotes />} />
-      </Routes>
-    </div>
-  )
-}
+    return (
+        <div className="App">
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </div>
+    );
+};
 
 export default App;
