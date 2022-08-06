@@ -6,7 +6,6 @@ import Pilotes from './pages/Pilotes';
 const App = () => {
     return (
         <div className="App">
-            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>

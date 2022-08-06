@@ -1,13 +1,15 @@
 @use '../abstracts/' as *;
 @use './navbar.scss';
+@use './banner.scss';
+
 
 .header {
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 2px solid $color-2;
     img {
         width: 137px;
         height: 137px;
