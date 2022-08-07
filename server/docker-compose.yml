@@ -1,12 +1,12 @@
 version: "3"
 services:
     postgres:
-        container_name: server-sessions-postgres
+        container_name: laravelapi
         image: postgres:latest
         ports:
             - "5432:5432"
         volumes:
-            - /data/server-sessions-postgres:/data/postgres
+            - /data/laravelapi:/data/postgres
         env_file:
             - docker.env
         networks:
