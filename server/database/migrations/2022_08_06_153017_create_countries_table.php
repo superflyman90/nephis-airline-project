@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('iso');
             $table->string('iso3');
+            $table->string('call_code');
             $table->timestamps();
         });
     }

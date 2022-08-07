@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api\v1;
 
-use App\Models\Country;
-use App\Http\Requests\StoreCountryRequest;
-use App\Http\Requests\UpdateCountryRequest;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreSimulatorRequest;
+use App\Http\Requests\UpdateSimulatorRequest;
+use App\Models\Simulator;
 
-class CountryController extends Controller
+class SimulatorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +32,10 @@ class CountryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCountryRequest  $request
+     * @param  \App\Http\Requests\StoreSimulatorRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCountryRequest $request)
+    public function store(StoreSimulatorRequest $request)
     {
         //
     }
@@ -42,10 +43,10 @@ class CountryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Simulator  $simulator
      * @return \Illuminate\Http\Response
      */
-    public function show(Country $country)
+    public function show(Simulator $simulator)
     {
         //
     }
@@ -53,10 +54,10 @@ class CountryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Simulator  $simulator
      * @return \Illuminate\Http\Response
      */
-    public function edit(Country $country)
+    public function edit(Simulator $simulator)
     {
         //
     }
@@ -64,11 +65,11 @@ class CountryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCountryRequest  $request
-     * @param  \App\Models\Country  $country
+     * @param  \App\Http\Requests\UpdateSimulatorRequest  $request
+     * @param  \App\Models\Simulator  $simulator
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCountryRequest $request, Country $country)
+    public function update(UpdateSimulatorRequest $request, Simulator $simulator)
     {
         //
     }
@@ -76,10 +77,10 @@ class CountryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Simulator  $simulator
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Country $country)
+    public function destroy(Simulator $simulator)
     {
         //
     }

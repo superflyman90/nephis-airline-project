@@ -25,7 +25,6 @@ return new class extends Migration
             $table->date('birthday');
             $table->integer('ivaoid')->nullable();
             $table->integer('vatsimid')->nullable();
-            $table->string('phone',min(8),max(11));
             $table->bigInteger('salaire');
             $table->timestamp('accepted_at')->nullable();
             $table->rememberToken();
